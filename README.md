@@ -26,25 +26,15 @@ A mini ERP Purchase Order and Inventory Stock Management API built with Laravel 
 
 ## Installation
 
-Clone the repository:
+Clone the repository : git clone https://github.com/Anaks88/erp-machine-test.git
 
-git clone <repository-url>
+Enter the project : cd erp-machine-test
 
-Enter the project:
+Install dependencies : composer install
 
-cd erp-machine-test
+Copy environment file : copy .env.example .env
 
-Install dependencies:
-
-composer install
-
-Copy environment file:
-
-copy .env.example .env
-
-Generate application key:
-
-php artisan key:generate
+Generate application key : php artisan key:generate
 
 Configure database in .env:
 
@@ -55,13 +45,9 @@ DB_DATABASE=erp_machine_test
 DB_USERNAME=root
 DB_PASSWORD=
 
-Run migrations and seeders:
+Run migrations and seeders : php artisan migrate --seed
 
-php artisan migrate --seed
-
-Start Laravel:
-
-php artisan serve
+Start Laravel : php artisan serve
 
 ## API Endpoints
 
@@ -125,6 +111,4 @@ Once a Purchase Order is RECEIVED or CANCELLED, its status cannot be changed.
 
 ## Testing
 
-Run:
-
-php artisan test
+Run : php artisan test
